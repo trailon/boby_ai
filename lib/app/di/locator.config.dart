@@ -24,6 +24,8 @@ import '../../domain/usecase/get_popular_movies.dart' as _i1041;
 import '../../domain/usecase/get_saved_onboarding.dart' as _i14;
 import '../../domain/usecase/save_favorites.dart' as _i595;
 import '../../domain/usecase/save_genres.dart' as _i444;
+import '../../presentation/onboarding/favorites/onboarding_favorites_store.dart'
+    as _i235;
 import 'modules/network_module.dart' as _i851;
 import 'modules/storage_module.dart' as _i148;
 
@@ -65,6 +67,12 @@ Future<_i174.GetIt> $initGetIt(
   );
   gh.factory<_i444.SaveGenres>(
     () => _i444.SaveGenres(gh<_i649.OnboardingRepository>()),
+  );
+  gh.factory<_i235.OnboardingFavoritesStore>(
+    () => _i235.OnboardingFavoritesStore(
+      getPopularMovies: gh<_i1041.GetPopularMovies>(),
+      saveFavorites: gh<_i595.SaveFavorites>(),
+    ),
   );
   return getIt;
 }

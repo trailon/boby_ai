@@ -10,4 +10,4 @@ final locator = GetIt.instance;
   preferRelativeImports: true,
   asExtension: false,
 )
-void setupLocator() => $initGetIt(locator);
+Future<void> setupLocator() async => $initGetIt(locator);
