@@ -37,6 +37,30 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+
+    flavorDimensions += "default"
+
+    productFlavors {
+
+        create("dev") {
+            dimension =  "default"
+            applicationIdSuffix  = ".dev"
+            versionNameSuffix =  "-dev"
+            resValue("string", "app_name", "DEV Boby Ai")
+        }
+
+        create("stage") {
+            dimension =  "default"
+            applicationIdSuffix =  ".dev"
+            versionNameSuffix =  "-staging"
+            resValue("string", "app_name", "STAGE Boby Ai")
+        }
+
+        create("prod") {
+            dimension  = "default"
+            resValue("string", "app_name", "Boby Ai")
+        }
+    }
 }
 
 flutter {
