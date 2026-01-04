@@ -1,6 +1,7 @@
 import 'package:boby_ai/app/env/app_flavor.dart';
 import 'package:boby_ai/app/localization/generated/l10n.dart';
 import 'package:boby_ai/app/router/router.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -14,7 +15,7 @@ class BobyAi extends StatelessWidget {
       themeMode: ThemeMode.dark,
       builder: (context, child) {
         debugPrint("TextScale: ${MediaQuery.of(context).textScaler.toString()}");
-        if (flavor != AppEnvFlavor.prod) {
+        if (!kReleaseMode) {
           child = Banner(location: BannerLocation.topStart, message: flavor.name, child: child);
         }
         return child!;
