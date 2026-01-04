@@ -21,6 +21,9 @@ dependencies:
   mobx: ^2.6.0
   flutter_mobx: ^2.3.0
 
+  # Storage
+  shared_preferences: ^2.5.4
+
   # DI
   get: ^4.6.1
   get_it: ^9.2.0
