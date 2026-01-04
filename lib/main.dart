@@ -11,6 +11,5 @@ Future<void> main() async {
   flavor = const String.fromEnvironment('flavor').flavor;
   appEnv = AppEnv();
   await setupLocator();
-  FlutterNativeSplash.remove();
   runApp(const BobyAi());
 }
