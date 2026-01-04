@@ -49,6 +49,49 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Continue`
+  String get continue_text {
+    return Intl.message(
+      'Continue',
+      name: 'continue_text',
+      desc: 'Continue text for buttons and navigation',
+      args: [],
+    );
+  }
+
+  /// `Welcome`
+  String get onboarding_favorites_step_intro_title {
+    return Intl.message(
+      'Welcome',
+      name: 'onboarding_favorites_step_intro_title',
+      desc:
+          'Title for onboarding screen in favorites step when the user has not selected 3 favorite movies',
+      args: [],
+    );
+  }
+
+  /// `Choose your 3 favorite movies`
+  String get onboarding_favorites_step_intro_subtitle {
+    return Intl.message(
+      'Choose your 3 favorite movies',
+      name: 'onboarding_favorites_step_intro_subtitle',
+      desc:
+          'Subtitle for onboarding screen in favorites step when the user has not selected 3 favorite movies',
+      args: [],
+    );
+  }
+
+  /// `Continue to next step 👉`
+  String get onboarding_favorites_step_done_title {
+    return Intl.message(
+      'Continue to next step 👉',
+      name: 'onboarding_favorites_step_done_title',
+      desc:
+          'Title for onboarding screen in favorites step when the user has selected 3 favorite movies',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
