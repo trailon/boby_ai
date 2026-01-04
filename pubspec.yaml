@@ -21,8 +21,9 @@ dependencies:
   mobx: ^2.6.0
   flutter_mobx: ^2.3.0
 
-  # Storage
+  # Storage and Caching
   shared_preferences: ^2.5.4
+  cached_network_image: ^3.4.1
 
   # DI
   get: ^4.6.1
