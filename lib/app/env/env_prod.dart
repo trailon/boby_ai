@@ -12,6 +12,10 @@ final class ProdEnv implements AppEnv, AppEnvFields {
   final String baseUrl = _Env.baseUrl;
 
   @override
+  @EnviedField(varName: 'IMAGE_BUCKET_URL')
+  final String imageBucketUrl = _Env.imageBucketUrl;
+
+  @override
   @EnviedField(varName: 'BEARER_TOKEN')
   final String bearerToken = _Env.bearerToken;
 }
