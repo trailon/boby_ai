@@ -11,4 +11,6 @@ class GenreListResponseDto {
   GenreListResponseDto({required this.genres});
 
   factory GenreListResponseDto.fromJson(Map<String, dynamic> json) => _$GenreListResponseDtoFromJson(json);
+
+  Map<String, dynamic> toJson() => _$GenreListResponseDtoToJson(this);
 }

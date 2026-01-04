@@ -17,4 +17,6 @@ class MovieListResponseDtoV1 {
   MovieListResponseDtoV1({required this.page, required this.results, required this.totalPages});
 
   factory MovieListResponseDtoV1.fromJson(Map<String, dynamic> json) => _$MovieListResponseDtoV1FromJson(json);
+
+  Map<String, dynamic> toJson() => _$MovieListResponseDtoV1ToJson(this);
 }
