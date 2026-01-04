@@ -14,7 +14,3 @@ abstract interface class AppEnv implements AppEnvFields {
     AppEnvFlavor.prod => ProdEnv(),
   };
 }
-
-class Env {
-  static final AppEnv appEnv = AppEnv();
-}
