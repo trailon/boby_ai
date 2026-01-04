@@ -1,3 +1,19 @@
 {
-    "@@locale": "tr"
+    "@@locale": "tr",
+    "continue_text": "Devam et",
+    "@continue_text": {
+        "description": "Continue text for buttons and navigation"
+    },
+    "onboarding_favorites_step_intro_title": "Hoşgeldin",
+    "@onboarding_favorites_step_intro_title": {
+        "description": "Title for onboarding screen in favorites step when the user has not selected 3 favorite movies"
+    },
+    "onboarding_favorites_step_intro_subtitle": "3 favori filmini seç",
+    "@onboarding_favorites_step_intro_subtitle": {
+        "description": "Subtitle for onboarding screen in favorites step when the user has not selected 3 favorite movies"
+    },
+    "onboarding_favorites_step_done_title": "Sonraki adıma devam et 👉",
+    "@onboarding_favorites_step_done_title": {
+        "description": "Title for onboarding screen in favorites step when the user has selected 3 favorite movies"
+    }
 }
