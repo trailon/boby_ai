@@ -12,6 +12,7 @@ class AppRouter extends RootStackRouter {
   List<AutoRoute> get routes => [
     AutoRoute(page: OnboardingFavoritesRoute.page, initial: true),
     AutoRoute(page: OnboardingGenresRoute.page),
+    AutoRoute(page: PaywallRoute.page),
   ];
 }
 
