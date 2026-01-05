@@ -1,3 +1,5 @@
+import 'package:boby_ai/app/router/router.dart';
+import 'package:boby_ai/app/router/router.gr.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:injectable/injectable.dart';
 import 'package:mobx/mobx.dart';
@@ -80,6 +82,7 @@ abstract class OnboardingFavoritesStoreBase with Store {
   Future<void> submit() async {
     try {
       await saveFavorites(selectedMovieIds.toSet());
+      appRouter.push(const OnboardingGenresRoute());
     } catch (e) {
       error = e.toString();
     }
