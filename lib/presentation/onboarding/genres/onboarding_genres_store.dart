@@ -1,3 +1,5 @@
+import 'package:boby_ai/app/router/router.dart';
+import 'package:boby_ai/app/router/router.gr.dart';
 import 'package:injectable/injectable.dart';
 import 'package:mobx/mobx.dart';
 
@@ -51,5 +53,6 @@ abstract class OnboardingGenresStoreBase with Store {
   @action
   Future<void> persist() async {
     await _saveGenresUseCase(selectedGenreIds.toSet());
+    appRouter.push(const PaywallRoute());
   }
 }

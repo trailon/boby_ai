@@ -17,9 +17,9 @@ class _GenresGrid extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 24),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            mainAxisSpacing: context.height * 0.02,
-            crossAxisSpacing: context.width * 0.15,
-            childAspectRatio: 1, // perfect circle
+            mainAxisSpacing: 24.h,
+            crossAxisSpacing: 52.w,
+            childAspectRatio: 1,
           ),
           itemCount: store.genres.length,
           itemBuilder: (_, index) {

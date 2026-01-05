@@ -5,6 +5,7 @@ import 'package:boby_ai/domain/entity/genre.dart';
 import 'package:boby_ai/presentation/components/widgets/app_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_utils/src/extensions/context_extensions.dart';
 
 import '../../../../app/di/locator.dart';
@@ -37,12 +38,20 @@ class _OnboardingGenresScreenState extends State<OnboardingGenresScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Stack(
+          alignment: Alignment.bottomCenter,
           children: [
-            _Header(store: store),
-            Expanded(child: _GenresGrid(store: store)),
-            _ContinueButton(store: store),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _Header(store: store),
+                Expanded(child: _GenresGrid(store: store)),
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 30.h),
+              child: _ContinueButton(store: store),
+            ),
           ],
         ),
       ),
