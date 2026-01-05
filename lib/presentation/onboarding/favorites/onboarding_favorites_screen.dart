@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:boby_ai/app/env/app_flavor.dart';
 import 'package:boby_ai/app/localization/generated/l10n.dart';
 import 'package:boby_ai/presentation/components/movie/movie_poster_card.dart';
+import 'package:boby_ai/presentation/components/widgets/app_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get/utils.dart';
