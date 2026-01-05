@@ -27,5 +27,117 @@
     "onboarding_genres_step_done_title": "Thank you 👍",
     "@onboarding_genres_step_done_title": {
         "description": "Title for onboarding screen in genres step when the user has selected 2 favorite genres"
+    },
+    "paywall_option_1": "Daily Movie Suggestions",
+    "@paywall_option_1": {
+        "description": "Title for paywall option 1"
+    },
+    "paywall_option_2": "AI-Powered Movie Insights",
+    "@paywall_option_2": {
+        "description": "Title for paywall option 2"
+    },
+    "paywall_option_3": "Personalized Watchlists",
+    "@paywall_option_3": {
+        "description": "Title for paywall option 3"
+    },
+    "paywall_option_4": "Ad-Free Experience",
+    "@paywall_option_4": {
+        "description": "Title for paywall option 4"
+    },
+    "free": "FREE",
+    "@free": {
+        "description": "Free text for subscription plans"
+    },
+    "pro": "PRO",
+    "@pro": {
+        "description": "Pro text for subscription plans"
+    },
+    "enable_free_trial": "Enable Free Trial",
+    "@enable_free_trial": {
+        "description": "Enable free trial text for subscription plans"
+    },
+    "weekly": "Weekly",
+    "@weekly": {
+        "description": "Weekly text for subscription plans"
+    },
+    "monthly": "Monthly",
+    "@monthly": {
+        "description": "Monthly text for subscription plans"
+    },
+    "yearly": "Yearly",
+    "@yearly": {
+        "description": "Yearly text for subscription plans"
+    },
+    "only_price_per_week": "Only ${price} per week",
+    "@only_price_per_week": {
+        "description": "Only price per week text for subscription plans",
+        "placeholders": {
+            "price": {
+                "type": "String",
+                "example": "4.99"
+            }
+        }
+    },
+    "per_week": "{price} / week",
+    "@per_week": {
+        "description": "Per week text for subscription plans",
+        "placeholders": {
+            "price": {
+                "type": "String",
+                "example": "4.99"
+            }
+        }
+    },
+    "per_month": "{price} / month",
+    "@per_month": {
+        "description": "Per month text for subscription plans",
+        "placeholders": {
+            "price": {
+                "type": "String",
+                "example": "11.99"
+            }
+        }
+    },
+    "per_year": "{price} / year",
+    "@per_year": {
+        "description": "Per year text for subscription plans",
+        "placeholders": {
+            "price": {
+                "type": "String",
+                "example": "49.99"
+            }
+        }
+    },
+    "paywall_footer_title": "Auto Renewable, Cancel Anytime",
+    "@paywall_footer_title": {
+        "description": "Paywall footer title"
+    },
+    "paywall_footer_cta_button_state_price": "Unlock MovieAI PRO",
+    "@paywall_footer_cta_button_state_price": {
+        "description": "Paywall footer cta button state price"
+    },
+    "paywall_footer_cta_button_state_free_1": "3 Days Free",
+    "@paywall_footer_cta_button_state_free_1": {
+        "description": "Paywall footer cta button state free 1"
+    },
+    "paywall_footer_cta_button_state_free_2": "No Payment Now",
+    "@paywall_footer_cta_button_state_free_2": {
+        "description": "Paywall footer cta button state free 2"
+    },
+    "legal_links_1": "Terms of Use",
+    "@legal_links_1": {
+        "description": "Legal links 1"
+    },
+    "legal_links_2": "Restore Purchase",
+    "@legal_links_2": {
+        "description": "Legal links 2"
+    },
+    "legal_links_3": "Privacy Policy",
+    "@legal_links_3": {
+        "description": "Legal links 3"
+    },
+    "best_value": "Best Value",
+    "@best_value": {
+        "description": "Best value text for subscription plans"
     }
 }

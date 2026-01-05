@@ -3,9 +3,9 @@ part of '../favorites/onboarding_favorites_screen.dart';
 class _MoviesWheel extends StatelessWidget {
   final OnboardingFavoritesStore store;
 
-  _MoviesWheel({required this.store});
+  const _MoviesWheel({required this.store});
 
-  final PageController _controller = PageController(
+  static final PageController _controller = PageController(
     viewportFraction: 0.48, // ensures 2 items almost fill screen
     initialPage: 0,
   );
@@ -13,7 +13,7 @@ class _MoviesWheel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: context.height * 0.3,
+      height: 252.h,
       child: Observer(
         builder: (_) {
           return PageView.builder(

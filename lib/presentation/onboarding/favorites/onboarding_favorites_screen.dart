@@ -5,6 +5,7 @@ import 'package:boby_ai/presentation/components/movie/movie_poster_card.dart';
 import 'package:boby_ai/presentation/components/widgets/app_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/utils.dart';
 import 'package:vector_math/vector_math_64.dart';
 

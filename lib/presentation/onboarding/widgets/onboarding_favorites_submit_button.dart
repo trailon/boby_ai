@@ -11,7 +11,6 @@ class _ContinueButton extends StatelessWidget {
       builder: (_) {
         final enabled = store.selectedMovieIds.length >= 3;
         return AppButton(text: S.current.continue_text, onPressed: enabled ? store.submit : null);
-       
       },
     );
   }

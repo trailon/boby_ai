@@ -32,7 +32,7 @@ class _GenreCircle extends StatelessWidget {
             ),
           ),
 
-          if (selected) Positioned(bottom: 12, right: 12, child: _CheckBadge()),
+          if (selected) Positioned(bottom: 12.h, right: 12.w, child: _CheckBadge()),
         ],
       ),
     );
@@ -43,13 +43,10 @@ class _CheckBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 28,
-      height: 28,
-      decoration: const BoxDecoration(
-        shape: BoxShape.circle,
-        color: AppColors.primaryRed, // #CB2C2C
-      ),
-      child: const Icon(Icons.check, size: 16, color: Colors.white),
+      width: 32.w,
+      height: 32.h,
+      decoration: const BoxDecoration(shape: BoxShape.circle, color: AppColors.primaryRed),
+      child: Icon(Icons.check, size: 20.sp, color: AppColors.white),
     );
   }
 }

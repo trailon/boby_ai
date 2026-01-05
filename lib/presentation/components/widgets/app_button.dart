@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppButton extends StatelessWidget {
   final String text;
@@ -9,20 +10,12 @@ class AppButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-          padding: const EdgeInsets.all(24),
-          child: SizedBox(
-            width: double.infinity,
-            height: 56,
-            child: ElevatedButton(
-              onPressed: onPressed,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFFCB2C2C),
-                disabledBackgroundColor: const Color(0xFF8C2626),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-              ),
-              child: Text(text),
-            ),
-          ),
-        );
+      padding: EdgeInsets.all(24.sp),
+      child: SizedBox(
+        width: double.infinity,
+        height: 56.h,
+        child: ElevatedButton(onPressed: onPressed, child: Text(text)),
+      ),
+    );
   }
 }
