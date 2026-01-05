@@ -10,23 +10,8 @@ class _ContinueButton extends StatelessWidget {
     return Observer(
       builder: (_) {
         final enabled = store.selectedMovieIds.length >= 3;
-
-        return Padding(
-          padding: const EdgeInsets.all(24),
-          child: SizedBox(
-            width: double.infinity,
-            height: 56,
-            child: ElevatedButton(
-              onPressed: enabled ? store.submit : null,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFFCB2C2C),
-                disabledBackgroundColor: const Color(0xFF8C2626),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-              ),
-              child: Text(S.current.continue_text),
-            ),
-          ),
-        );
+        return AppButton(text: S.current.continue_text, onPressed: enabled ? store.submit : null);
+       
       },
     );
   }
