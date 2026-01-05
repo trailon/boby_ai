@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MoviePosterCard extends StatelessWidget {
   final String imageUrl;
@@ -36,13 +37,13 @@ class MoviePosterCard extends StatelessWidget {
           /// Check badge
           if (selected)
             Positioned(
-              bottom: 16,
-              right: 16,
+              bottom: 16.h,
+              right: 16.w,
               child: Container(
-                width: 32,
-                height: 32,
+                width: 32.w,
+                height: 32.h,
                 decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFFCB2C2C)),
-                child: const Icon(Icons.check, size: 18, color: Colors.white),
+                child: Icon(Icons.check, size: 20.sp, color: Colors.white),
               ),
             ),
         ],
