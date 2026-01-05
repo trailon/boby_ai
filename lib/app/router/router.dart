@@ -9,7 +9,10 @@ class AppRouter extends RootStackRouter {
   RouteType get defaultRouteType => Platform.isAndroid ? const RouteType.material() : const RouteType.cupertino();
 
   @override
-  List<AutoRoute> get routes => [AutoRoute(page: OnboardingFavoritesRoute.page, initial: true)];
+  List<AutoRoute> get routes => [
+    AutoRoute(page: OnboardingFavoritesRoute.page, initial: true),
+    AutoRoute(page: OnboardingGenresRoute.page),
+  ];
 }
 
 final appRouter = AppRouter();
