@@ -11,6 +11,7 @@ ThemeData buildAppTheme() {
     textTheme: const TextTheme(
       headlineMedium: AppTextStyles.headlineMedium,
       headlineSmall: AppTextStyles.headlineSmall,
+      titleMedium: AppTextStyles.titleMedium,
       bodyMedium: AppTextStyles.body,
       labelLarge: AppTextStyles.button,
     ),

@@ -17,6 +17,13 @@ abstract class AppTextStyles {
     color: AppColors.textPrimary,
   );
 
+  static const titleMedium = TextStyle(
+    fontFamily: 'Inter',
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textPrimary,
+  );
+
   static const body = TextStyle(
     fontFamily: 'Inter',
     fontSize: 16,
