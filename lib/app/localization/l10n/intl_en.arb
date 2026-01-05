@@ -1,3 +1,31 @@
 {
-    "@@locale": "en"
+    "@@locale": "en",
+    "continue_text": "Continue",
+    "@continue_text": {
+        "description": "Continue text for buttons and navigation"
+    },
+    "onboarding_favorites_step_intro_title": "Welcome",
+    "@onboarding_favorites_step_intro_title": {
+        "description": "Title for onboarding screen in favorites step when the user has not selected 3 favorite movies"
+    },
+    "onboarding_favorites_step_intro_subtitle": "Choose your 3 favorite movies",
+    "@onboarding_favorites_step_intro_subtitle": {
+        "description": "Subtitle for onboarding screen in favorites step when the user has not selected 3 favorite movies"
+    },
+    "onboarding_favorites_step_done_title": "Continue to next step 👉",
+    "@onboarding_favorites_step_done_title": {
+        "description": "Title for onboarding screen in favorites step when the user has selected 3 favorite movies"
+    },
+    "onboarding_genres_step_intro_title": "Welcome",
+    "@onboarding_genres_step_intro_title": {
+        "description": "Title for onboarding screen in genres step when the user has not selected 2 favorite genres"
+    },
+    "onboarding_genres_step_intro_subtitle": "Choose your 2 favorite genres",
+    "@onboarding_genres_step_intro_subtitle": {
+        "description": "Subtitle for onboarding screen in genres step when the user has not selected 2 favorite genres"
+    },
+    "onboarding_genres_step_done_title": "Thank you 👍",
+    "@onboarding_genres_step_done_title": {
+        "description": "Title for onboarding screen in genres step when the user has selected 2 favorite genres"
+    }
 }
