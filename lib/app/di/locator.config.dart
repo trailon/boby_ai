@@ -18,8 +18,11 @@ import '../../data/api/tmdb_api.dart' as _i213;
 import '../../data/repository/onboarding_repository_impl.dart' as _i323;
 import '../../data/source/onboarding_local_source.dart' as _i611;
 import '../../data/source/onboarding_local_source_impl.dart' as _i811;
+import '../../data/source/paywall_config_source.dart' as _i920;
+import '../../data/source/paywall_config_source_impl.dart' as _i643;
 import '../../domain/repository/onboarding_repository.dart' as _i649;
 import '../../domain/usecase/get_genres.dart' as _i383;
+import '../../domain/usecase/get_paywall_config.dart' as _i567;
 import '../../domain/usecase/get_popular_movies.dart' as _i1041;
 import '../../domain/usecase/get_saved_onboarding.dart' as _i14;
 import '../../domain/usecase/save_favorites.dart' as _i595;
@@ -28,6 +31,7 @@ import '../../presentation/onboarding/favorites/onboarding_favorites_store.dart'
     as _i235;
 import '../../presentation/onboarding/genres/onboarding_genres_store.dart'
     as _i131;
+import '../../presentation/paywall/paywall_store.dart' as _i1072;
 import 'modules/network_module.dart' as _i851;
 import 'modules/storage_module.dart' as _i148;
 
@@ -45,15 +49,24 @@ Future<_i174.GetIt> $initGetIt(
     preResolve: true,
   );
   gh.lazySingleton<_i361.Dio>(() => networkModule.dio());
+  gh.lazySingleton<_i920.PaywallConfigSource>(
+    () => _i643.PaywallConfigSourceImpl(),
+  );
   gh.lazySingleton<_i611.OnboardingLocalSource>(
     () => _i811.OnboardingLocalSourceImpl(gh<_i460.SharedPreferences>()),
   );
   gh.lazySingleton<_i213.TmdbApi>(() => networkModule.tmdbApi(gh<_i361.Dio>()));
+  gh.factory<_i567.GetPaywallConfig>(
+    () => _i567.GetPaywallConfig(gh<_i920.PaywallConfigSource>()),
+  );
   gh.lazySingleton<_i649.OnboardingRepository>(
     () => _i323.OnboardingRepositoryImpl(
       api: gh<_i213.TmdbApi>(),
       localSource: gh<_i611.OnboardingLocalSource>(),
     ),
+  );
+  gh.factory<_i1072.PaywallStore>(
+    () => _i1072.PaywallStore(gh<_i567.GetPaywallConfig>()),
   );
   gh.factory<_i383.GetGenres>(
     () => _i383.GetGenres(gh<_i649.OnboardingRepository>()),
