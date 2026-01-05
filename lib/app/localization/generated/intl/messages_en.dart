@@ -29,6 +29,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "Choose your 3 favorite movies"),
         "onboarding_favorites_step_intro_title":
+            MessageLookupByLibrary.simpleMessage("Welcome"),
+        "onboarding_genres_step_done_title":
+            MessageLookupByLibrary.simpleMessage("Thank you 👍"),
+        "onboarding_genres_step_intro_subtitle":
+            MessageLookupByLibrary.simpleMessage(
+                "Choose your 2 favorite genres"),
+        "onboarding_genres_step_intro_title":
             MessageLookupByLibrary.simpleMessage("Welcome")
       };
 }

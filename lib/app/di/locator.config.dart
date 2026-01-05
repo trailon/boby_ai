@@ -26,6 +26,8 @@ import '../../domain/usecase/save_favorites.dart' as _i595;
 import '../../domain/usecase/save_genres.dart' as _i444;
 import '../../presentation/onboarding/favorites/onboarding_favorites_store.dart'
     as _i235;
+import '../../presentation/onboarding/genres/onboarding_genres_store.dart'
+    as _i131;
 import 'modules/network_module.dart' as _i851;
 import 'modules/storage_module.dart' as _i148;
 
@@ -67,6 +69,12 @@ Future<_i174.GetIt> $initGetIt(
   );
   gh.factory<_i444.SaveGenres>(
     () => _i444.SaveGenres(gh<_i649.OnboardingRepository>()),
+  );
+  gh.factory<_i131.OnboardingGenresStore>(
+    () => _i131.OnboardingGenresStore(
+      gh<_i383.GetGenres>(),
+      gh<_i444.SaveGenres>(),
+    ),
   );
   gh.factory<_i235.OnboardingFavoritesStore>(
     () => _i235.OnboardingFavoritesStore(

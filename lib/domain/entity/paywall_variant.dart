@@ -1,0 +1,1 @@
+enum PaywallVariant { variantA, variantB }

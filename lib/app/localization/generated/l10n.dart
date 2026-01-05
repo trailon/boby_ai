@@ -92,6 +92,39 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome`
+  String get onboarding_genres_step_intro_title {
+    return Intl.message(
+      'Welcome',
+      name: 'onboarding_genres_step_intro_title',
+      desc:
+          'Title for onboarding screen in genres step when the user has not selected 2 favorite genres',
+      args: [],
+    );
+  }
+
+  /// `Choose your 2 favorite genres`
+  String get onboarding_genres_step_intro_subtitle {
+    return Intl.message(
+      'Choose your 2 favorite genres',
+      name: 'onboarding_genres_step_intro_subtitle',
+      desc:
+          'Subtitle for onboarding screen in genres step when the user has not selected 2 favorite genres',
+      args: [],
+    );
+  }
+
+  /// `Thank you 👍`
+  String get onboarding_genres_step_done_title {
+    return Intl.message(
+      'Thank you 👍',
+      name: 'onboarding_genres_step_done_title',
+      desc:
+          'Title for onboarding screen in genres step when the user has selected 2 favorite genres',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

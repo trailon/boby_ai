@@ -28,6 +28,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "onboarding_favorites_step_intro_subtitle":
             MessageLookupByLibrary.simpleMessage("3 favori filmini seç"),
         "onboarding_favorites_step_intro_title":
+            MessageLookupByLibrary.simpleMessage("Hoşgeldin"),
+        "onboarding_genres_step_done_title":
+            MessageLookupByLibrary.simpleMessage("Teşekkürler 👍"),
+        "onboarding_genres_step_intro_subtitle":
+            MessageLookupByLibrary.simpleMessage("2 favori türünü seç"),
+        "onboarding_genres_step_intro_title":
             MessageLookupByLibrary.simpleMessage("Hoşgeldin")
       };
 }
