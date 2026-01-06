@@ -10,7 +10,7 @@ GenreListResponseDto _$GenreListResponseDtoFromJson(
   Map<String, dynamic> json,
 ) => GenreListResponseDto(
   genres: (json['genres'] as List<dynamic>)
-      .map((e) => GenreDto.fromJson(e as Map<String, dynamic>))
+      .map((e) => GenreDtoV1.fromJson(e as Map<String, dynamic>))
       .toList(),
 );
 
