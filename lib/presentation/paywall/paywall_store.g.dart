@@ -179,6 +179,18 @@ mixin _$PaywallStore on PaywallStoreBase, Store {
   }
 
   @override
+  void closePaywall() {
+    final _$actionInfo = _$PaywallStoreBaseActionController.startAction(
+      name: 'PaywallStoreBase.closePaywall',
+    );
+    try {
+      return super.closePaywall();
+    } finally {
+      _$PaywallStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
 variant: ${variant},
