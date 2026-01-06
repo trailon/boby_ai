@@ -31,7 +31,7 @@ class _PaywallScreenVariantB extends StatelessWidget {
           top: 80.h,
           left: 331.w,
           child: IconButton(
-            onPressed: () {},
+            onPressed: store.closePaywall,
             icon: const Icon(Icons.close, color: Colors.white),
           ),
         ),
