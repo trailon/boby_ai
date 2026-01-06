@@ -9,7 +9,6 @@ abstract class AppColors {
   // Text
   static const textPrimary = Color(0xFFF3E9E9);
   static const textSecondary = Color(0xFFDED5D5);
-  static const textMuted = Color(0xFF968D8D);
 
   // Brand
   static const primaryRed = Color(0xFFCB2C2C);
