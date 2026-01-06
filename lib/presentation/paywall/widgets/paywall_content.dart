@@ -12,7 +12,7 @@ class _PaywallContent extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          _PaywallHeader(onClosePressed: () {}),
+          _PaywallHeader(onClosePressed: store.closePaywall),
           SizedBox(height: 16.h),
           _PaywallFeatureTable(store: store),
           SizedBox(height: 28.h),
