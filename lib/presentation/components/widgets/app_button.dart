@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get_utils/src/extensions/context_extensions.dart';
 
 class AppButton extends StatelessWidget {
   final String text;
@@ -14,7 +15,10 @@ class AppButton extends StatelessWidget {
       child: SizedBox(
         width: double.infinity,
         height: 56.h,
-        child: ElevatedButton(onPressed: onPressed, child: Text(text)),
+        child: ElevatedButton(
+          onPressed: onPressed,
+          child: Text(text, textAlign: TextAlign.center, style: context.textTheme.titleSmall),
+        ),
       ),
     );
   }

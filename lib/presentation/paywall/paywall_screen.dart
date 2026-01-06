@@ -9,6 +9,7 @@ import 'package:boby_ai/domain/entity/subscription_plan.dart';
 import 'package:boby_ai/presentation/components/widgets/app_button.dart';
 import 'package:boby_ai/presentation/paywall/paywall_store.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';

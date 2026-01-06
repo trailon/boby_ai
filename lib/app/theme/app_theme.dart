@@ -25,7 +25,6 @@ ThemeData buildAppTheme() {
         backgroundColor: AppColors.primaryRed,
         disabledBackgroundColor: AppColors.primaryRedDark,
         foregroundColor: Colors.white,
-        padding: const EdgeInsets.symmetric(vertical: 18),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         textStyle: AppTextStyles.button,
       ),
