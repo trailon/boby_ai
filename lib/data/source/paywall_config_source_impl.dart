@@ -1,5 +1,4 @@
-import 'dart:math';
-
+import 'package:boby_ai/app/env/app_flavor.dart';
 import 'package:boby_ai/app/localization/generated/l10n.dart';
 import 'package:boby_ai/data/source/paywall_config_source.dart';
 import 'package:boby_ai/domain/entity/paywall_feature.dart';
@@ -10,12 +9,7 @@ import 'package:injectable/injectable.dart';
 @LazySingleton(as: PaywallConfigSource)
 class PaywallConfigSourceImpl implements PaywallConfigSource {
   @override
-  PaywallVariant getVariant() {
-    return Random()
-            .nextBool() //TODO For now its random variant
-        ? PaywallVariant.variantA
-        : PaywallVariant.variantB;
-  }
+  PaywallVariant getVariant() => appEnv.variant.toVariant;
 
   @override
   List<PaywallFeature> getFeatures() => [
