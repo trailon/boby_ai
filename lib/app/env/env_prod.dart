@@ -18,4 +18,8 @@ final class ProdEnv implements AppEnv, AppEnvFields {
   @override
   @EnviedField(varName: 'BEARER_TOKEN')
   final String bearerToken = _Env.bearerToken;
+
+  @override
+  @EnviedField(varName: 'VARIANT')
+  final String variant = _Env.variant;
 }

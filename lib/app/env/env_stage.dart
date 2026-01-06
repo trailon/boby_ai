@@ -4,7 +4,7 @@ import 'package:envied/envied.dart';
 
 part 'env_stage.g.dart';
 
-@Envied(name: 'Env', path: '.env.stage', obfuscate: true, requireEnvFile: true)
+@Envied(name: 'Env', path: '.env.stage', obfuscate: false, requireEnvFile: true)
 final class StageEnv implements AppEnv, AppEnvFields {
   StageEnv();
   @override
@@ -18,4 +18,8 @@ final class StageEnv implements AppEnv, AppEnvFields {
   @override
   @EnviedField(varName: 'BEARER_TOKEN')
   final String bearerToken = _Env.bearerToken;
+
+  @override
+  @EnviedField(varName: 'VARIANT')
+  final String variant = _Env.variant;
 }
