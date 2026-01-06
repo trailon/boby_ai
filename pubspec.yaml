@@ -51,6 +51,7 @@ dependencies:
   flutter_svg: ^2.2.3
   flutter_animate: ^4.5.2
   flutter_screenutil: ^5.9.3
+  scrollable_list_tab_scroller: ^3.1.1
 
 
 dev_dependencies:
