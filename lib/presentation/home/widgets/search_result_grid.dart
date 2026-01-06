@@ -25,7 +25,7 @@ class _SearchResultsGrid extends StatelessWidget {
                         height: 140.h,
                         fit: BoxFit.cover,
                         progressIndicatorBuilder: (context, url, progress) =>
-                            Center(child: CircularProgressIndicator()),
+                            const Center(child: CircularProgressIndicator()),
                         errorWidget: (context, error, stackTrace) => Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [

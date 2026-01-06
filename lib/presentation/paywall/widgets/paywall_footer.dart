@@ -9,10 +9,10 @@ class _PaywallFooter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _AutoRenewalText(),
+        const _AutoRenewalText(),
         SizedBox(height: 4.h),
         _PaywallCTAButton(store: store),
-        _PaywallLegalLinks(),
+        const _PaywallLegalLinks(),
       ],
     );
   }

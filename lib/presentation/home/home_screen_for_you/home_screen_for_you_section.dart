@@ -7,7 +7,7 @@ class _HomeScreenForYouSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         border: Border(bottom: BorderSide(color: AppColors.white, width: 1)),
       ),
       child: Column(
@@ -35,7 +35,7 @@ class _HomeScreenForYouSection extends StatelessWidget {
                       store.loadNext();
                     }
                     return Container(
-                      decoration: BoxDecoration(shape: BoxShape.circle),
+                      decoration: const BoxDecoration(shape: BoxShape.circle),
                       clipBehavior: Clip.antiAlias,
                       child: CachedNetworkImage(
                         imageUrl: '${appEnv.imageBucketUrl}${movie.posterPath}',

@@ -24,7 +24,7 @@ class _MoviesScrollableListWithTab extends StatelessWidget {
               visualDensity: VisualDensity.compact,
               color: WidgetStateProperty.resolveWith((states) => active ? AppColors.primaryRed : AppColors.white),
               chipAnimationStyle: ChipAnimationStyle(
-                enableAnimation: AnimationStyle(curve: Curves.easeInOut, duration: Duration(milliseconds: 300)),
+                enableAnimation: const AnimationStyle(curve: Curves.easeInOut, duration: Duration(milliseconds: 300)),
               ),
               avatarBoxConstraints: BoxConstraints(minWidth: 20.sp, minHeight: 20.sp),
               padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
@@ -67,7 +67,7 @@ class _MoviesScrollableListWithTab extends StatelessWidget {
                                   height: 140.h,
                                   fit: BoxFit.cover,
                                   progressIndicatorBuilder: (context, url, progress) =>
-                                      Center(child: CircularProgressIndicator()),
+                                      const Center(child: CircularProgressIndicator()),
                                   errorWidget: (context, error, stackTrace) => Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
