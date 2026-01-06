@@ -1,4 +1,5 @@
 import 'package:boby_ai/app/env/app_flavor.dart';
+import 'package:boby_ai/data/api/movie_api.dart';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 
@@ -19,5 +20,10 @@ abstract class NetworkModule {
   @lazySingleton
   TmdbApi tmdbApi(Dio dio) {
     return TmdbApi(dio);
+  }
+
+  @lazySingleton
+  MovieApi movieApi(Dio dio) {
+    return MovieApi(dio);
   }
 }
