@@ -44,10 +44,10 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Env files
-.env.dev
-.env.stage
-.env
+# Env files only uploading .env files for case study purposes
+# .env.dev
+# .env.stage
+# .env
 
 # Vs Code
 .vscode/
