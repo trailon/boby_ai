@@ -139,5 +139,21 @@
     "best_value": "En İyi Değer",
     "@best_value": {
         "description": "Best value text for subscription plans"
+    },
+    "home_screen_for_you_section_title": "Senin İçin ⭐️",
+    "@home_screen_for_you_section_title": {
+        "description": "Title for home screen for you section"
+    },
+    "home_screen_movies_section_title": "Filmler 🎬",
+    "@home_screen_movies_section_title": {
+        "description": "Title for home screen movies section"
+    },
+    "search_text": "Ara",
+    "@search_text": {
+        "description": "Search text for home screen movies section"
+    },
+    "image_not_found": "Görsel bulunamadı",
+    "@image_not_found": {
+        "description": "Image not found text for home screen movies section"
     }
 }

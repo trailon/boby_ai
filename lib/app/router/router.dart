@@ -13,6 +13,7 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: OnboardingFavoritesRoute.page, initial: true),
     AutoRoute(page: OnboardingGenresRoute.page),
     AutoRoute(page: PaywallRoute.page),
+    AutoRoute(page: HomeRoute.page),
   ];
 }
 

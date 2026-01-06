@@ -1,3 +1,5 @@
+import 'package:boby_ai/app/router/router.dart';
+import 'package:boby_ai/app/router/router.gr.dart';
 import 'package:boby_ai/domain/entity/paywall_feature.dart';
 import 'package:boby_ai/domain/entity/paywall_variant.dart';
 import 'package:boby_ai/domain/entity/subscription_plan.dart';
@@ -68,5 +70,10 @@ abstract class PaywallStoreBase with Store {
     Future.delayed(const Duration(seconds: 1), () {
       highlightFreeTrial = false;
     });
+  }
+
+  @action
+  void closePaywall() {
+    appRouter.replaceAll([const HomeRoute()]);
   }
 }

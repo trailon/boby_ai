@@ -345,6 +345,46 @@ class S {
       args: [],
     );
   }
+
+  /// `For You ⭐️`
+  String get home_screen_for_you_section_title {
+    return Intl.message(
+      'For You ⭐️',
+      name: 'home_screen_for_you_section_title',
+      desc: 'Title for home screen for you section',
+      args: [],
+    );
+  }
+
+  /// `Movies 🎬`
+  String get home_screen_movies_section_title {
+    return Intl.message(
+      'Movies 🎬',
+      name: 'home_screen_movies_section_title',
+      desc: 'Title for home screen movies section',
+      args: [],
+    );
+  }
+
+  /// `Search`
+  String get search_text {
+    return Intl.message(
+      'Search',
+      name: 'search_text',
+      desc: 'Search text for home screen movies section',
+      args: [],
+    );
+  }
+
+  /// `Image not found`
+  String get image_not_found {
+    return Intl.message(
+      'Image not found',
+      name: 'image_not_found',
+      desc: 'Image not found text for home screen movies section',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

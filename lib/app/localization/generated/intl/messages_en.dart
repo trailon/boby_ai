@@ -35,6 +35,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "enable_free_trial":
             MessageLookupByLibrary.simpleMessage("Enable Free Trial"),
         "free": MessageLookupByLibrary.simpleMessage("FREE"),
+        "home_screen_for_you_section_title":
+            MessageLookupByLibrary.simpleMessage("For You ⭐️"),
+        "home_screen_movies_section_title":
+            MessageLookupByLibrary.simpleMessage("Movies 🎬"),
+        "image_not_found":
+            MessageLookupByLibrary.simpleMessage("Image not found"),
         "legal_links_1": MessageLookupByLibrary.simpleMessage("Terms of Use"),
         "legal_links_2":
             MessageLookupByLibrary.simpleMessage("Restore Purchase"),
@@ -75,6 +81,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "per_week": m2,
         "per_year": m3,
         "pro": MessageLookupByLibrary.simpleMessage("PRO"),
+        "search_text": MessageLookupByLibrary.simpleMessage("Search"),
         "weekly": MessageLookupByLibrary.simpleMessage("Weekly"),
         "yearly": MessageLookupByLibrary.simpleMessage("Yearly")
       };

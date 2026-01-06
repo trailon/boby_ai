@@ -35,6 +35,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "enable_free_trial": MessageLookupByLibrary.simpleMessage(
             "Ücretsiz Deneme Süresini Aktif Et"),
         "free": MessageLookupByLibrary.simpleMessage("ÜCRETSİZ"),
+        "home_screen_for_you_section_title":
+            MessageLookupByLibrary.simpleMessage("Senin İçin ⭐️"),
+        "home_screen_movies_section_title":
+            MessageLookupByLibrary.simpleMessage("Filmler 🎬"),
+        "image_not_found":
+            MessageLookupByLibrary.simpleMessage("Görsel bulunamadı"),
         "legal_links_1":
             MessageLookupByLibrary.simpleMessage("Kullanım Koşulları"),
         "legal_links_2": MessageLookupByLibrary.simpleMessage("Geri Satın Al"),
@@ -74,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "per_week": m2,
         "per_year": m3,
         "pro": MessageLookupByLibrary.simpleMessage("PRO"),
+        "search_text": MessageLookupByLibrary.simpleMessage("Ara"),
         "weekly": MessageLookupByLibrary.simpleMessage("Haftalık"),
         "yearly": MessageLookupByLibrary.simpleMessage("Yıllık")
       };
