@@ -1,0 +1,83 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "boby.ai.flutter",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart"
+    },
+    {
+      "name": "Boby Ai Dev",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor",
+        "dev",
+        "--dart-define=flavor=dev"
+      ]
+    },
+    {
+      "name": "Boby Ai Stage",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor",
+        "stage",
+        "--dart-define=flavor=stage"
+      ]
+    },
+    {
+      "name": "Boby Ai Prod",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--flavor",
+        "prod",
+        "--dart-define=flavor=prod"
+      ]
+    },
+    {
+      "name": "Boby Ai (profile mode dev)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "args": [
+        "--flavor",
+        "dev",
+        "--dart-define=flavor=dev"
+      ]
+    },
+    {
+      "name": "Boby Ai (profile mode stage)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "args": [
+        "--flavor",
+        "stage",
+        "--dart-define=flavor=stage"
+      ]
+    },
+    {
+      "name": "Boby Ai (profile mode prod)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "args": [
+        "--flavor",
+        "prod",
+        "--dart-define=flavor=prod"
+      ]
+    },
+    {
+      "name": "Boby Ai (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}
