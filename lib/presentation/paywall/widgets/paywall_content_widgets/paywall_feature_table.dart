@@ -49,7 +49,7 @@ class _PaywallFeatureTable extends StatelessWidget {
               ],
             ).paddingOnly(top: context.height * 0.01, bottom: context.height * 0.01),
           ),
-          Spacer(flex: 2),
+          const Spacer(flex: 2),
 
           // PRO column with highlight border
           Expanded(
@@ -112,7 +112,7 @@ class _FadeLine extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: hide
             ? null
-            : LinearGradient(
+            : const LinearGradient(
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: [Colors.transparent, AppColors.primaryRedDark, Colors.transparent],

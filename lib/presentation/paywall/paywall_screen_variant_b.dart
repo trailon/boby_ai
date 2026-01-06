@@ -41,7 +41,7 @@ class _PaywallScreenVariantB extends StatelessWidget {
             // Close button
 
             // Scrollable content
-            Spacer(),
+            const Spacer(),
 
             // App Name
             Text(
@@ -49,16 +49,16 @@ class _PaywallScreenVariantB extends StatelessWidget {
               style: context.textTheme.headlineMedium?.copyWith(color: Colors.white, fontWeight: FontWeight.w700),
             ).paddingOnly(bottom: 30.h),
             // Feature list with checkmarks
-            _PaywallVariantBOptionTexts().paddingOnly(bottom: 32.h),
+            const _PaywallVariantBOptionTexts().paddingOnly(bottom: 32.h),
 
             // Plan list
             _PlanList(store: store).paddingOnly(bottom: 24.h),
             // Auto-renewal text
-            _AutoRenewalText().paddingOnly(bottom: 8.h),
+            const _AutoRenewalText().paddingOnly(bottom: 8.h),
             // Continue button
-            _PaywallVariantBCtaButton().paddingOnly(bottom: 24.h),
+            const _PaywallVariantBCtaButton().paddingOnly(bottom: 24.h),
             // Footer links
-            _PaywallLegalLinks().paddingOnly(bottom: context.mediaQueryViewPadding.bottom),
+            const _PaywallLegalLinks().paddingOnly(bottom: context.mediaQueryViewPadding.bottom),
           ],
         ).paddingSymmetric(horizontal: 20.w),
       ],

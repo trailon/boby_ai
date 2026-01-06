@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: _HomeScreen());
+    return const Scaffold(body: _HomeScreen());
   }
 }
 

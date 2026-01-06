@@ -42,9 +42,9 @@ class _OnboardingFavoritesScreenState extends State<OnboardingFavoritesScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _Header(store: store),
-            Spacer(),
+            const Spacer(),
             _MoviesWheel(store: store),
-            Spacer(),
+            const Spacer(),
             _ContinueButton(store: store),
           ],
         ),
